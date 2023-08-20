@@ -1,7 +1,7 @@
-name: responsive_helper
+name: flutter_responsive_helper
 description: A flutter package for making responsive application from your UI design easier and faster.
 version: 1.0.1
-homepage: https://github.com/Malay1121/responsive_helper.git
+homepage: https://github.com/Malay1121/flutter_responsive_helper
 
 environment:
   sdk: '>=2.19.4 <3.0.0'
