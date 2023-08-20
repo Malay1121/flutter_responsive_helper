@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_responsive_helper/responsive_helper.dart';
+import 'package:flutter_responsive_helper/flutter_responsive_helper.dart';
 
 class ResponsiveExample extends StatefulWidget {
   const ResponsiveExample({super.key});
