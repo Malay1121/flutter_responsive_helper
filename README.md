@@ -1,17 +1,17 @@
-# responsive_helper
+# flutter_responsive_helper
 
-responsive_helper is a Flutter package which will help you make your application responsive without doing any calculations. Just add the same measurements as given by the designer!
+flutter_responsive_helper is a Flutter package which will help you make your application responsive without doing any calculations. Just add the same measurements as given by the designer!
 
 # How does it work?
 
-You just have to initialize responsive_helper by giving the size of the screen which is used in the UI. Then just copy paste the sizes of the objects which are given in the UI and paste it in your code by using .h / .w / .t after giving the size. Now responsive_helper will automatically calculate and make that object responsive according to the user's screen and your code will look really very similar to the design given by the designer.
+You just have to initialize flutter_responsive_helper by giving the size of the screen which is used in the UI. Then just copy paste the sizes of the objects which are given in the UI and paste it in your code by using .h / .w / .t after giving the size. Now flutter_responsive_helper will automatically calculate and make that object responsive according to the user's screen and your code will look really very similar to the design given by the designer.
 
 ## Installation
 
 Install the package in your code
 
 ```bash
-flutter pub add responsive_helper
+flutter pub add flutter_responsive_helper
 ```
 
 ## Usage
