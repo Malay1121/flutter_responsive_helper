@@ -1,39 +1,60 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# responsive_helper
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+responsive_helper is a Flutter package which will help you make your application responsive without doing any calculations. Just add the same measurements as given by the designer!
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+# How does it work?
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+You just have to initialize responsive_helper by giving the size of the screen which is used in the UI. Then just copy paste the sizes of the objects which are given in the UI and paste it in your code by using .h / .w / .t after giving the size. Now responsive_helper will automatically calculate and make that object responsive according to the user's screen and your code will look really very similar to the design given by the designer.
 
-## Features
+## Installation
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Install the package in your code
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+```bash
+flutter pub add responsive_helper
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+class ResponsiveExample extends StatefulWidget {
+  const ResponsiveExample({super.key});
+
+  @override
+  State<ResponsiveExample> createState() => _ResponsiveExampleState();
+}
+
+class _ResponsiveExampleState extends State<ResponsiveExample> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    initializeSize(396, 812); // Give the size of the screen which is used in the design
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
+          children: [
+              Container(
+                width: 350.w(context), // width of the object which is given in the design file
+                height: 80.h(context), // height of the object which is given in the design file
+                color: Colors.black,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
 ```
 
-## Additional information
+## Author
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+<a href="https://github.com/Malay1121"><img src="https://avatars.githubusercontent.com/u/56907997?v=3" title="Malay1121" width="80" height="80"></a>
+
+<a class="github-button" href="https://github.com/Malay1121" aria-label="Follow @Malay1121 on GitHub">Follow @Malay1121</a>
+
+<a class="github-button" href="https://www.linkedin.com/malay-patel-dev/" aria-label="LinkedIn: malay-patel-dev">LinkedIn: @Malay Patel</a>
