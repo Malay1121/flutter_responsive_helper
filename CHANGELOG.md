@@ -1,3 +1,3 @@
-## 0.0.1
+## 1.0.1
 
-* TODO: Describe initial release.
+* First version. Basic calculations for making your application responsive based on your design.
